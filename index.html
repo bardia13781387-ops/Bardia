@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>بردیا آقایی | صفحه شخصی</title>
+  <meta name="description" content="بردیا آقایی: متولد ۱۳۸۷/۱۰/۱۵ در تهران. شناگر حرفه‌ای، بدنساز حرفه‌ای و طراح سایت." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#000000;
+      --card:#0f0f0f;
+      --text:#f5f5f5;
+      --muted:#b5b5b5;
+      --line:#1e1e1e;
+      --radius:20px;
+      --shadow: 0 10px 30px rgba(0,0,0,.6);
+      --accent-red:#ff3b3b;
+      --accent-blue:#3ba9ff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:var(--bg);
+      color:var(--text); font-family:"Vazirmatn", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; 
+      line-height:1.8; letter-spacing:.1px;
+    }
+    .container{max-width:800px; margin:auto; padding:24px}header{
+  background:linear-gradient(90deg,var(--accent-red),var(--accent-blue));
+}
+.nav{display:flex; align-items:center; justify-content:center; padding:14px 0}
+.brand{display:flex; align-items:center; gap:10px; font-weight:800; font-size:22px; color:#fff}
+.logo{
+  inline-size:40px; block-size:40px; border-radius:12px; display:grid; place-items:center; 
+  background:#fff;
+  color:var(--bg);
+  font-weight:900;
+}
+
+.panel{
+  background:var(--card);
+  border:1px solid var(--line); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow);
+  margin-top:30px;
+}
+.title{font-weight:900; font-size:32px; margin:0 0 8px; text-align:center; color:var(--accent-blue)}
+.subtitle{text-align:center; color:var(--muted); font-size:18px}
+
+table{width:100%; border-collapse:collapse; margin-top:20px; font-size:15px}
+th,td{padding:14px 12px; border-bottom:1px solid var(--line); text-align:center}
+th{color:var(--accent-red); font-weight:800; background:rgba(255,255,255,.05)}
+
+footer{margin-top:36px; border-top:1px solid var(--line); color:var(--muted); padding:18px; text-align:center}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <span class="brand">
+        <span class="logo">BA</span>
+        <span>بردیا آقایی</span>
+      </span>
+    </div>
+  </header>  <main class="container">
+    <div class="panel">
+      <h1 class="title">بردیا آقایی</h1>
+      <p class="subtitle">بردیا آقایی متولد سال ۱۳۸۷/۱۰/۱۵ در تهران به دنیا آمده.</p>
+      <p class="subtitle">شناگر حرفه‌ای و بدنساز حرفه‌ای است و حرفه‌هایی که دارد طراحی سایت است.</p>
+    </div><div class="panel">
+  <h2 style="text-align:center; color:var(--accent-red)">رکوردهای شنای من</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>رشته</th>
+        <th>رکورد</th>
+        <th>مسابقه</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>۲۰۰ متر آزاد</td>
+        <td>۰۲:۴۰.۹۵</td>
+        <td>جام آزادی (رده سنی ۱۵–۱۷ سال)</td>
+      </tr>
+      <tr>
+        <td>۵۰ متر قورباغه</td>
+        <td>۰۰:۴۰.۶۹</td>
+        <td>جام آزادی (رده سنی ۱۵–۱۷ سال)</td>
+      </tr>
+      <tr>
+        <td>۵۰ متر پروانه</td>
+        <td>۰۰:۳۳.۴۶</td>
+        <td>جام آزادی (رده سنی ۱۵–۱۷ سال)</td>
+      </tr>
+      <tr>
+        <td>۱۰۰ متر آزاد</td>
+        <td>۰۱:۰۹.۸۹</td>
+        <td>جام آزادی (رده سنی ۱۵–۱۷ سال)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  </main>  <footer>
+    © <span id="year"></span> بردیا آقایی
+  </footer>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+</html>
